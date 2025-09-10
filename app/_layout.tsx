@@ -10,7 +10,7 @@ export default function RootLayout() {
           name="index" 
           options={{ 
             title: 'React Native Tasks',
-            headerStyle: { backgroundColor: '#6366f1' },
+            headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff',
             headerTitleStyle: { fontWeight: 'bold' }
           }} 
@@ -18,6 +18,7 @@ export default function RootLayout() {
         <Stack.Screen 
           name="login" 
           options={{ 
+            headerShown:false,
             title: 'Login Screen',
             headerStyle: { backgroundColor: '#6366f1' },
             headerTintColor: '#fff'
@@ -43,6 +44,7 @@ export default function RootLayout() {
           name="counter" 
           options={{ 
             title: 'Counter App',
+            headerShown:false,
             headerStyle: { backgroundColor: '#6366f1' },
             headerTintColor: '#fff'
           }} 
