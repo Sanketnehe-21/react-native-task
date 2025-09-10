@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const globalStyles = StyleSheet.create({
   header: {
-    backgroundColor: '#6366f1',
+    backgroundColor: '#000000ff',
     paddingVertical: 20,
     paddingHorizontal: 20,
     alignItems: 'center',
