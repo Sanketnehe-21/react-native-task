@@ -20,7 +20,7 @@ export default function RootLayout() {
           options={{ 
             headerShown:false,
             title: 'Login Screen',
-            headerStyle: { backgroundColor: '#6366f1' },
+            headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
           }} 
         />
@@ -28,7 +28,7 @@ export default function RootLayout() {
           name="posts" 
           options={{ 
             title: 'Posts List',
-            headerStyle: { backgroundColor: '#6366f1' },
+            headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
           }} 
         />
@@ -36,7 +36,7 @@ export default function RootLayout() {
           name="post-details" 
           options={{ 
             title: 'Post Details',
-            headerStyle: { backgroundColor: '#6366f1' },
+            headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
           }} 
         />
@@ -45,7 +45,7 @@ export default function RootLayout() {
           options={{ 
             title: 'Counter App',
             headerShown:false,
-            headerStyle: { backgroundColor: '#6366f1' },
+            headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
           }} 
         />
