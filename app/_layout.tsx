@@ -27,6 +27,7 @@ export default function RootLayout() {
         <Stack.Screen 
           name="posts" 
           options={{ 
+            headerShown:false,
             title: 'Posts List',
             headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
@@ -35,6 +36,7 @@ export default function RootLayout() {
         <Stack.Screen 
           name="post-details" 
           options={{ 
+            headerShown:false,
             title: 'Post Details',
             headerStyle: { backgroundColor: '#000000ff' },
             headerTintColor: '#fff'
