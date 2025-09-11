@@ -8,7 +8,7 @@ export default function HomeScreen() {
   const navigationButtons = [
     { title: 'Task 1: Login Screen', route: '/login', color: '#000000ff' },
     { title: 'Task 2: API Posts List', route: '/posts', color: '#000000' },
-    { title: 'Task 4: Counter App', route: '/counter', color: '#000000' },
+    { title: 'Task 3: Counter App', route: '/counter', color: '#000000' },
   ];
 
   return (
