@@ -40,8 +40,8 @@ types/
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-link>
-cd <your-repo-folder>
+git clone https://github.com/Sanketnehe-21/react-native-task.git
+cd react-native-task
 ```
 
 ### 2. Install dependencies
