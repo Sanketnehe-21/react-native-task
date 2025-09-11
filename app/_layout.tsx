@@ -34,7 +34,7 @@ export default function RootLayout() {
           }} 
         />
         <Stack.Screen 
-          name="post-details" 
+          name="postdetails" 
           options={{ 
             headerShown:false,
             title: 'Post Details',

@@ -10,7 +10,20 @@ interface PostItemProps {
 export default function PostItem({ post }: PostItemProps) {
   const router = useRouter();
 
+  if (!post) {
+    return (
+      <View style={styles.errorContainer}>
+        <Text style={styles.errorText}>Post data not available</Text>
+      </View>
+    );
+  }
+
   const handlePress = () => {
+    if (!post.id || !post.title || !post.body || !post.userId) {
+      console.warn('Missing post data:', post);
+      return;
+    }
+
     router.push({
       pathname: '/postdetails',
       params: {
@@ -25,14 +38,14 @@ export default function PostItem({ post }: PostItemProps) {
   return (
     <TouchableOpacity style={styles.container} onPress={handlePress}>
       <View style={styles.header}>
-        <Text style={styles.id}>#{post.id}</Text>
-        <Text style={styles.userId}>User {post.userId}</Text>
+        <Text style={styles.id}>#{post.id || 'N/A'}</Text>
+        <Text style={styles.userId}>User {post.userId || 'Unknown'}</Text>
       </View>
       <Text style={styles.title} numberOfLines={2}>
-        {post.title}
+        {post.title || 'No title available'}
       </Text>
       <Text style={styles.body} numberOfLines={3}>
-        {post.body}
+        {post.body || 'No content available'}
       </Text>
       <View style={styles.footer}>
         <Text style={styles.readMore}>Tap to read more →</Text>
@@ -92,5 +105,18 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#6366f1',
     fontWeight: '500',
+  },
+  errorContainer: {
+    backgroundColor: '#fee2e2',
+    marginVertical: 6,
+    padding: 16,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#fecaca',
+  },
+  errorText: {
+    color: '#dc2626',
+    fontSize: 14,
+    textAlign: 'center',
   },
 });
